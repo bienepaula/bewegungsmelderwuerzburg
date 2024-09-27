@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bewegungsmelder Würzburg </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    
+     <style>
+         h2{
+             text-align: left
+         }
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+            margin: 25px;
+        }
+        .month {
+            grid-column: span 30;
+            text-align: left;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+        .day {
+            text-align: center;
+            padding: 7px;
+            border: 5px solid #ccc;
+        }
+        .navigation {
+            grid-column: span 7;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+         .highlight{
+             color: mediumseagreen;
+             font-family: sans-serif; 
+         }
+        
+    </style>
+    <header>
+        <img src="bewegungsmelder%20w%C3%BCrzburg.png" alt="Bewegungsmelder header" width="100%" hight="100%"
+    </header>
+    
+       <body>
+           <nav>
+            <ul>
+                <li><a href="#events"><img src="Veranstaltungen.png" width="150" hight="70"></a></li>
+                <!-- <li><a href= "#newevents">Hinzufügen von Veranstaltungen</a></li> -->
+                <li><a href="#about"><img src="%C3%9Cber%20uns.png" width="90" hight="45"></a></li>
+                <li><a href="#contact"><img src="Kontakt.png" width="80" hight="20"></a></li>
+                  
+            </ul>
+        </nav>
+
+
+    <main>
+        Wir sind ein Veranstaltungskalender und hier kommt noch ein Einführungstext hiiin. Ich bin so hyped hihi!!!
+        <section id="events">
+            <h2>
+            <img src="Veranstaltungen.png" width="250" hight="140"> </h2>
+            
+            <ul id="event-list">
+                
+   
+    
+                
+    <div class="calendar">
+        <div class="navigation">
+            <button onclick="previousMonth()">Vorheriger Monat</button>
+            <button onclick="nextMonth()">Nächster Monat</button>
+        </div>
+        <div id="september" class="month-container">
+                <div class="month"><h1>September</h1></div>
+                
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .wide-colum{
+            width: 300px;
+        }
+    </style>
+    <table>
+        <thead>
+            <tr>
+                <th >Wann?</th>
+                <th>Ort</th>
+                <th>Motto</th>
+                <th>Zeit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01.01.2024</td>
+                <td>Berlin</td>
+                <td>Neujahr</td>
+                <td>00:00</td>
+            </tr>
+            <tr>
+                <td>11.02.2024</td>
+                <td>Köln</td>
+                <td>Karneval</td>
+                <td>14:00</td>
+            </tr>
+            <!-- Weitere Zeilen hier hinzufügen -->
+        </tbody>
+    </table>
+        </div>
+
+    <div id="october" class="month-container hidden">
+            <div class="month"><h2>Oktober</h2></div>
+    
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+    <table>
+        <thead>
+            <tr>
+                <th>Datum</th>
+                <th>Ort</th>
+                <th>Motto</th>
+                <th>Zeit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01.01.2024</td>
+                <td>Berlin</td>
+                <td>Neujahr</td>
+                <td>00:00</td>
+            </tr>
+            <tr>
+                <td>11.02.2024</td>
+                <td>Köln</td>
+                <td>Karneval</td>
+                <td>14:00</td>
+            </tr>
+            <!-- Weitere Zeilen hier hinzufügen -->
+        </tbody>
+    </table>
+            </div>
+        
+
+    <script>
+        let currentMonth = 0;
+        const months = document.querySelectorAll('.month-container');
+
+        function showMonth(index) {
+            months.forEach((month, i) => {
+                month.classList.toggle('hidden', i !== index);
+            });
+        }
+
+        function previousMonth() {
+            currentMonth = (currentMonth - 1 + months.length) % months.length;
+            showMonth(currentMonth);
+        }
+
+        function nextMonth() {
+            currentMonth = (currentMonth + 1) % months.length;
+            showMonth(currentMonth);
+        }
+
+        // Initial anzeigen des ersten Monats
+        </script>
+                </div>
+        <div class="section">
+       
+        <section id="about">
+            <h2>Über uns</h2>
+            <p>In dem Alles für Alle Würzburg Terminkalender sollen alle coolen Veranstaltungen in und um Würzburg gespeichert werden können </p>
+        </section>
+        
+        </div>
+        <section id="contact">
+            <h2>Kontakt</h2>
+                <p>Wenn du noch Fragen oder Anmerkungen hast, melde dich gerne hier...</p>
+        </section>
+   
+        </main>
+        
+    <footer>
+        <p>Alles für Alle Würzburg Terminkalender</p>
+    </footer>
+    <script src="script.js">
+            </script>
+</body>
+</html>
